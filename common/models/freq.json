@@ -1,0 +1,29 @@
+{
+  "name": "freq",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ff": {
+      "type": "number"
+    },
+    "vf": {
+      "type": "number"
+    },
+    "slider_position": {
+      "type": "number"
+    },
+    "date": {
+      "type": "string"
+    },
+    "loudness": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

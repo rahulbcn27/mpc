@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MidTerm Project</title>
+	<link rel="stylesheet" href="styles/main.css">
+	<script language="javascript"></script>
+</head>
+<body>
+    <h1>Welcome!</h1>
+	<div class="row labels">
+		<p>This experiment aims at studying the effect of loudness on the minimum perceivable difference in frequencies of two tones played one after another. The experiment starts with a loudness calibration for consistency in results across various devices and subjects. At the beginning, the subjects are made to listen to a test tone and asked to reduce the volume slider to such a level beyond which they can hear nothing. We consider this level L0 as 0 dB throughout the scope of this experiment. We have chosen tones from low, mid-low, mid, mid-high and high frequency zones. These buttons corresponding to the tones are enlisted in the Fixed Frequencies column. Fixed Frequencies in the sense that they will play the same tone whenever the button is clicked. The sliders control and play the second tone for comparison. More the slider level, more the frequency of the tone being played on clicking corresponding button in Variable Frequency column. The granularity of the sliders are not same and have been programmed as per the hearing sensitivity in various frequency zones for the convenience of the subjects. To avoid the effects of biasing on subjects, we are not revealing the loudness levels and the frequency values for the tones throughout the experiment.
+		</p>
+	</div>
+	<form>
+		<div class="container">
+			<label><b>Name</b></label>
+			<input id="name" type="text" placeholder="Enter Name" name="name" required>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<label><b>EmailID</b></label>
+			<input id="email" type="text" placeholder="Enter Email" name="email" required>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<label><b>Age</b></label>
+			<input id="age" type="text" placeholder="Enter Age" name="age" required>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<label><b>Gender</b></label>
+			<select>
+			  <option value="male">MALE</option>
+			  <option value="femlae">FEMALE</option>
+			</select>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<label><b>Musical Training</b></label>
+			<select>
+			  <option value="g1"> <1 yrs</option>
+			  <option value="g2">2-5 yrs</option>
+			  <option value="g3">5-10 yrs</option>
+			  <option value="g4"> >10 yrs</option>
+			</select>
+		</div>	
+		<div class="row labels">
+	    </div>
+		<div class="row labels">
+			<p>Calibrate the loudness level. Reduce the volume using the slider till you can hear the tone.
+			<input id="volume_slider" 
+					class="slidergap_spl" type="range"
+					list="tickmarks" value="0.0005"
+					min="0" max="0.0005"		
+					step="0.00001"
+					name="range"
+					onchange="playfixedfreqLoop(1000,this.value)">	
+			</p>
+		</div>
+	</form>
+	<button id="login" onclick="setUserData()" type="submit" class="width100">Next</button>
+    <script src="controller.js"></script>
+</body>
+</html>
+
+<!--
+<datalist id="tickmarks">
+  <option value="0" label="0%">
+  <option value="0.01">
+  <option value="0.02">
+  <option value="0.03">
+  <option value="0.04">
+  <option value="0.05" label="50%">
+  <option value="0.06">
+  <option value="0.07">
+  <option value="0.08">
+  <option value="0.09">
+  <option value="0.1" label="100%">
+</datalist>
+-->

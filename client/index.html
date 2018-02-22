@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MidTerm Project</title>
+	<link rel="stylesheet" href="styles/main.css">
+	<script language="javascript"></script>
+</head>
+<body>
+	<div style="float: left;">
+		<div style="float: left;">
+			<h1>Loundness Level L1</h1>
+			<div class="row flex">
+				<div class="gap"> <h3>Fixed Frequency</h3> </div>
+				<div class="gap"> <h3>Variable Frequency Sliders </h3></div>
+			</div>
+			<form>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(65.41,setVolumeAtL1(getZeroDb()))">L1.FF1</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="10"
+							min="0" max="10"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(65.41,setVolumeAtL1(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(311.13,setVolumeAtL1(getZeroDb()))">L1.FF2</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="40"
+							min="0" max="40"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(311.13,setVolumeAtL1(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(698.46,setVolumeAtL1(getZeroDb()))">L1.FF3</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="100"
+							min="0" max="100"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(698.46,setVolumeAtL1(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(1046.5,setVolumeAtL1(getZeroDb()))">L1.FF4</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="100"
+							min="0" max="100"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(1046.5,setVolumeAtL1(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(2500,setVolumeAtL1(getZeroDb()))">L1.FF5</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="100"
+							min="0" max="100"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(2500,setVolumeAtL1(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(4000,setVolumeAtL1(getZeroDb()))">L1.FF6</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="100"
+							min="0" max="100"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(4000,setVolumeAtL1(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(6000,setVolumeAtL1(getZeroDb()))">L1.FF7</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="100"
+							min="0" max="100"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(6000,setVolumeAtL1(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(8000,setVolumeAtL1(getZeroDb()))">L1.FF8</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="100"
+							min="0" max="100"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(8000,setVolumeAtL1(getZeroDb()),this.value)">
+					</div>
+				</div>
+			</form>
+		</div>
+		<div style="float: right; margin-left:70px">
+			<h1>Loundness Level L2</h1>
+			<div class="row flex">
+				<div class="gap"> <h3>Fixed Frequency</h3> </div>
+				<div class="gap"> <h3>Variable Frequency Sliders </h3></div>
+			</div>
+			<form>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(65.41,setVolumeAtL2(getZeroDb()))">L2.FF1</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="10"
+							min="0" max="10"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(65.41,setVolumeAtL2(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(311.13,setVolumeAtL2(getZeroDb()))">L2.FF2</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="40"
+							min="0" max="40"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(311.13,setVolumeAtL2(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(698.46,setVolumeAtL2(getZeroDb()))">L2.FF3</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="100"
+							min="0" max="100"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(698.46,setVolumeAtL2(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(1046.5,setVolumeAtL2(getZeroDb()))">L2.FF4</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="100"
+							min="0" max="100"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(1046.5,setVolumeAtL2(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(2500,setVolumeAtL2(getZeroDb()))">L2.FF5</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="100"
+							min="0" max="100"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(2500,setVolumeAtL2(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(4000,setVolumeAtL2(getZeroDb()))">L2.FF6</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="100"
+							min="0" max="100"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(4000,setVolumeAtL2(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(6000,setVolumeAtL2(getZeroDb()))">L2.FF7</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="100"
+							min="0" max="100"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(6000,setVolumeAtL2(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(8000,setVolumeAtL2(getZeroDb()))">L2.FF8</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="100"
+							min="0" max="100"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(8000,setVolumeAtL2(getZeroDb()),this.value)">
+					</div>
+				</div>
+			</form>
+		</div>		
+	</div>
+	<div style="float: right;">
+			<h1>Loundness Level L3</h1>
+			<div class="row flex">
+				<div class="gap"> <h3>Fixed Frequency</h3> </div>
+				<div class="gap"> <h3>Variable Frequency Sliders </h3></div>
+			</div>
+			<form>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(65.41,setVolumeAtL3(getZeroDb()))">L3.FF1</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="10"
+							min="0" max="10"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(65.41,setVolumeAtL3(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(311.13,setVolumeAtL3(getZeroDb()))">L3.FF2</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="40"
+							min="0" max="40"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(311.13,setVolumeAtL3(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(698.46,setVolumeAtL3(getZeroDb()))">L3.FF3</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="100"
+							min="0" max="100"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(698.46,setVolumeAtL3(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(1046.5,setVolumeAtL3(getZeroDb()))">L3.FF4</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="100"
+							min="0" max="100"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(1046.5,setVolumeAtL3(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(2500,setVolumeAtL3(getZeroDb()))">L3.FF5</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="100"
+							min="0" max="100"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(2500,setVolumeAtL3(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(4000,setVolumeAtL3(getZeroDb()))">L3.FF6</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="100"
+							min="0" max="100"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(4000,setVolumeAtL3(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(6000,setVolumeAtL3(getZeroDb()))">L3.FF7</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="100"
+							min="0" max="100"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(6000,setVolumeAtL3(getZeroDb()),this.value)">
+					</div>
+				</div>
+				<div class="row labels">
+					<div class="gap"> 
+						<button type="button" onclick="playfixedfreq(8000,setVolumeAtL3(getZeroDb()))">L3.FF8</button> 
+						<input id="slider" 
+							class="slidergap" type="range"
+							list="tickmarks" value="100"
+							min="0" max="100"		
+							step="0.1"
+							name="range"
+							onchange="playvarfreq(8000,setVolumeAtL3(getZeroDb()),this.value)">
+					</div>
+				</div>
+			</form>
+		</div>
+	<button type="submit" class="width100" onclick="onSubmit()">Submit</button> 
+    <script src="controller.js"></script>
+</body>
+</html>
+
+<!--
+<datalist id="tickmarks">
+  <option value="0" label="0%">
+  <option value="1">
+  <option value="2">
+  <option value="3">
+  <option value="4">
+  <option value="5" label="50%">
+  <option value="6">
+  <option value="7">
+  <option value="8">
+  <option value="9">
+  <option value="10" label="100%">
+</datalist>
+-->
